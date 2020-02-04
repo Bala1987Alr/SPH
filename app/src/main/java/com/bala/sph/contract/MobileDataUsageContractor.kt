@@ -14,8 +14,7 @@ interface MobileDataUsageContractor {
 
     interface DataUsagePresenter
     {
-
-        fun getMobileDataUsage(limit : Int)
+        fun getMobileDataUsage()
     }
 
     interface DataUsageModel
@@ -25,6 +24,6 @@ interface MobileDataUsageContractor {
             fun onFinished(resources: Resources)
             fun onFailure(throwable : Throwable)
         }
-        fun getMobileDataUsage(onFinishedListener: OnFinishedListener,limit: Int)
+        fun getMobileDataUsage(onFinishedListener: OnFinishedListener)
     }
 }
